@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700;900&family=Righteous&family=Roboto+Condensed:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700;900&family=Righteous&family=Roboto+Condensed:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700;900&family=Noto+Serif:wght@700&family=Righteous&family=Roboto+Condensed:ital,wght@1,700&family=Rubik:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700;900&family=Noto+Serif:wght@700&family=Righteous&family=Roboto+Condensed:ital,wght@1,700&family=Rubik:ital@1&display=swap');
+body
+{
+  background-color:#E5E3E0;
+  align-items:center;
+  }
+.title
+{
+ font-family: 'Roboto Condensed', sans-serif;
+  font-size:50px;
+ text-shadow: 2px 3px 2px rgba(95,185,36,0.6);
+}
+.container
+{
+  margin:2%;
+  display:grid;
+  margin-left: 15%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  font-family: 'Righteous', cursive;
+   
+}
+.card
+{
+  border:2px solid #5D001D;
+  margin:1%;
+  text-align:center;
+  display:grid;
+  background-color:#EE4C7C;
+  grid-template-columns: 1fr;
+   grid-template-rows: 1fr 1fr 1fr;
+  transition:all 200ms;
+  max-width: 550px;
+  border-radius:10px;
+  font-size: 20px;
+ margin-left: 7%;
+}
+
+.ids
+{
+  grid-column:1;
+  grid-row:1;
+}
+.time
+{
+   grid-column:1;
+  grid-row:2; 
+}
+.tags
+{
+    grid-column:1;
+  grid-row:3;
+}
+span
+{
+  color:white;
+}
+.card:hover
+{
+  background-color:#9B1750;
+  transform:scale(1.1);
+  border:1px solid #E3AFBC;
+}
+.search
+{
+  width:60%;
+  margin-left:20%;
+  background-color: whitesmoke;
+  padding: 0.5%;
+  border-radius: 24px;
+ }
+ .okbut
+ {
+    font-size: 20px;
+    margin-left: 1%;
+    border-radius: 4px;
+ }
+.text
+{
+font-family: 'Righteous', cursive;
+font-size:50px;
+}
+
+
+@media (min-width:350px){
+    .container{
+        grid-template-columns: 1fr;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  } 
+  
+
+@media (min-width:850px){
+    .container{
+        grid-template-columns: 1fr 1fr;
+        margin-left: auto;
+        margin-right: auto;
+      
+    }
+  } 
+  
+  
+  /* small laptop */
+  @media (min-width:960px){
+    .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
